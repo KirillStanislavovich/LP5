@@ -1,0 +1,18 @@
+.four-screen {
+  background: linear-gradient(122deg, rgba(247,240,236,1) 33%, rgba(135,105,105,1) 100%);
+
+  &__desc {
+    font-size: 25px;
+  }
+
+  &__author {
+    margin-left: 75%;
+    font-size: 20px;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    padding: 30px 70px;
+  }
+}

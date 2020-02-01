@@ -1,0 +1,41 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+  padding-top: 30px;
+
+  &__label {
+    font-size: 30px;
+  }
+
+  &__input {
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 30px;
+    outline: 0;
+    text-align: center;
+    border: 1px solid #ffffff;
+    border-radius: 10px;
+  }
+
+  &__btn {
+    margin-top: 10px;
+    padding: 10px 43px;
+    font-size: 30px;
+    border: 0px;
+    border-radius: 10px;
+    outline: 0;
+    background-color: #fa837b;
+    cursor: pointer;
+
+    &:active {
+      transform: scale(0.95, 0.95);
+      transition: all 0.2s;
+    }
+  }
+}
+
+.error {
+  border-color: #f82370;
+}

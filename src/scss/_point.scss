@@ -1,0 +1,33 @@
+.points {
+  display: flex;
+}
+
+.point {
+  padding: 6px;
+  background-image: url(../img/point.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+
+  &--1 {
+    animation: point 1s linear 0s infinite alternate;
+  }
+
+  &--2 {
+    animation: point 1s linear 0.5s infinite alternate;
+  }
+
+  &--3 {
+    animation: point 1s linear 1s infinite alternate;
+  }
+}
+
+@keyframes point {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+

@@ -1,0 +1,104 @@
+.header {
+  position: relative;
+  background: url('../img/IMG_1798.JPG') center no-repeat;
+  background-size: cover;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    padding: 0 40px;
+  }
+
+  &__top {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 40px;
+  }
+
+  &__burger {
+    display: none;
+    background: url(../img/icons8-меню-50.png) no-repeat center;
+    width: 50px;
+    height: 50px;
+    border: 0;
+    outline: 0;
+  }
+
+  &__desc {
+    padding: 200px 0;
+  }
+
+  &__title {
+    text-align: center;
+    font-size: 60px;
+  }
+
+  &__subtitle {
+    text-align: center;
+    font-size: 40px;
+    margin-top: 30px;
+  }
+}
+
+.logo {
+  font-size: 40px;
+}
+
+.nav__list {
+display: flex;
+
+  &--horizontal {
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+.nav__item {
+
+  &--horizontal {
+
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+}
+
+.nav__link {
+  color: #ffffff;
+
+  &--horizontal {
+    font-size: 35px;
+  }
+}
+
+@media (max-width: 819px) {
+  .header {
+    &__container {
+      padding: 0 10px;
+    }
+
+    &__desc {
+      padding: 150px 0;
+    }
+
+    &__subtitle {
+      font-size: 30px;
+    }
+
+    &__top {
+      padding: 20px 10px;
+    }
+
+    &__burger {
+      display: block;
+    }
+  }
+
+  .nav__item {
+    &--horizontal {
+      display: none;
+    }
+  }
+}
